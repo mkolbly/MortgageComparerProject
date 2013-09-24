@@ -26,7 +26,7 @@
             android:name="com.kolbly.mortgagecomparer.activities.BlankActivityFixedTabsAndSwipe"
             android:label="@string/title_activity_test_activity5" >
         </activity>
-        <activity
+        <activity 
             android:name="org.acra.CrashReportDialog"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true"
@@ -48,7 +48,7 @@
             <meta-data
                 android:name="android.support.UI_OPTIONS"
                 android:value="splitActionBarWhenNarrow" />
-        </activity>
+        </activity>
         -->
 
         <activity

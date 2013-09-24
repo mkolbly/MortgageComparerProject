@@ -1,0 +1,12 @@
+This is a simple application written for purposes of providing an independent 
+Android code sample for my online resume. This is not a complicated application, 
+but is somewhat of a reference app for many Android development techniques. 
+See www.kolbly.com/sample for details. This software is released under the WTFPL 
+version 2. www.wtfpl.net
+
+<p>
+<b>Credits</b><br>
+Special thanks goes out to: Apache Commons (http://commons.apache.org), 
+Joda-Time (http://Joda.org), and RoboGuice (https://github.com/roboguice/roboguice). These 
+libraries were used in the development of Mortgage Comparer. All are licensed 
+under the Apache License V2 (http://www.apache.org/licenses/LICENSE-2.0).

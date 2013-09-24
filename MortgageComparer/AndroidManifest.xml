@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kolbly.mortgagecomparer"
+    android:versionCode="1"
+    android:versionName="0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.kolbly.mortgagecomparer.MyApplication"
+        android:icon="@drawable/ic_launcher3"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.BlankActivityFixedTabsAndSwipe"
+            android:label="@string/title_activity_test_activity5" >
+        </activity>
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity"
+            android:label="@string/title_activity_loan"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <!--
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity"
+            android:label="@string/title_activity_loan" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        -->
+
+        <activity
+            android:name="com.kolbly.mortgagecomparer.splashscreenactivity.MySplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.ScrollableTabsAndSwipe"
+            android:label="@string/title_activity_scrollable_tabs_and_swipe" >
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivityTableLayout"
+            android:label="@string/title_activity_amortization"
+            android:parentActivityName="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity" />
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivityListView"
+            android:label="@string/title_activity_amortization_activity_list_view" >
+        </activity>
+        <activity
+            android:name="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivityGridView"
+            android:label="@string/title_activity_amortization" >
+        </activity>        
+    </application>
+
+</manifest>

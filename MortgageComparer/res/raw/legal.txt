@@ -6,9 +6,8 @@ version 2. www.wtfpl.net
 
 <p>
 <b>Credits</b><br>
-Special thanks goes out to: Apache Commons (http://commons.apache.org), 
+Special thanks goes out to: Otto (http://square.github.io/otto/), 
+Apache Commons (http://commons.apache.org), 
 Joda-Time (http://Joda.org), and RoboGuice (https://github.com/roboguice/roboguice). These 
 libraries were used in the development of Mortgage Comparer. All are licensed 
 under the Apache License V2 (http://www.apache.org/licenses/LICENSE-2.0).
-
-abc

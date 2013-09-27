@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1379661367641" analysisTimestamp="1379661572973" release="">
+  <Project>
+    <Jar>D:\src\android\MortgageComparerProject\MortgageComparer\bin\classes</Jar>
+    <AuxClasspathEntry>C:\Users\mkolbly\AppData\Local\Temp\findbugs7848506783693264536.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\mkolbly\AppData\Local\Temp\findbugs9085164622785816169.jar</AuxClasspathEntry>
+    <SrcDir>D:\src\android\MortgageComparerProject\MortgageComparer\src</SrcDir>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" abbrev="RV" category="BAD_PRACTICE" instanceHash="de09884878faf72828a9cd9e055fab53" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="16">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>exceptional return value of java.io.File.mkdirs() ignored in com.kolbly.android.util.ExceptionWriter.write(String, Throwable)</LongMessage>
+    <Class classname="com.kolbly.android.util.ExceptionWriter" primary="true">
+      <SourceLine classname="com.kolbly.android.util.ExceptionWriter" start="25" end="125" sourcefile="ExceptionWriter.java" sourcepath="com/kolbly/android/util/ExceptionWriter.java" relSourcepath="com\kolbly\android\util\ExceptionWriter.java">
+        <Message>At ExceptionWriter.java:[lines 25-125]</Message>
+      </SourceLine>
+      <Message>In class com.kolbly.android.util.ExceptionWriter</Message>
+    </Class>
+    <Method classname="com.kolbly.android.util.ExceptionWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/Throwable;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.kolbly.android.util.ExceptionWriter" start="68" end="105" startBytecode="0" endBytecode="440" sourcefile="ExceptionWriter.java" sourcepath="com/kolbly/android/util/ExceptionWriter.java" relSourcepath="com\kolbly\android\util\ExceptionWriter.java"/>
+      <Message>In method com.kolbly.android.util.ExceptionWriter.write(String, Throwable)</Message>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1181" end="1195" startBytecode="0" endBytecode="138" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.mkdirs()</Message>
+    </Method>
+    <SourceLine classname="com.kolbly.android.util.ExceptionWriter" primary="true" start="83" end="83" startBytecode="44" endBytecode="44" sourcefile="ExceptionWriter.java" sourcepath="com/kolbly/android/util/ExceptionWriter.java" relSourcepath="com\kolbly\android\util\ExceptionWriter.java">
+      <Message>At ExceptionWriter.java:[line 83]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" instanceHash="e450c8b38f2d26ee30f62a35d26c0490" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: com.kolbly.mortgagecomparer.db.Loan.myDirtyFlag</LongMessage>
+    <Class classname="com.kolbly.mortgagecomparer.db.Loan" primary="true">
+      <SourceLine classname="com.kolbly.mortgagecomparer.db.Loan" start="35" end="551" sourcefile="Loan.java" sourcepath="com/kolbly/mortgagecomparer/db/Loan.java" relSourcepath="com\kolbly\mortgagecomparer\db\Loan.java">
+        <Message>At Loan.java:[lines 35-551]</Message>
+      </SourceLine>
+      <Message>In class com.kolbly.mortgagecomparer.db.Loan</Message>
+    </Class>
+    <Field classname="com.kolbly.mortgagecomparer.db.Loan" name="myDirtyFlag" signature="Z" isStatic="false" primary="true">
+      <SourceLine classname="com.kolbly.mortgagecomparer.db.Loan" sourcefile="Loan.java" sourcepath="com/kolbly/mortgagecomparer/db/Loan.java" relSourcepath="com\kolbly\mortgagecomparer\db\Loan.java">
+        <Message>In Loan.java</Message>
+      </SourceLine>
+      <Message>Field com.kolbly.mortgagecomparer.db.Loan.myDirtyFlag</Message>
+    </Field>
+    <SourceLine classname="com.kolbly.mortgagecomparer.db.Loan" primary="true" start="44" end="44" startBytecode="29" endBytecode="29" sourcefile="Loan.java" sourcepath="com/kolbly/mortgagecomparer/db/Loan.java" relSourcepath="com\kolbly\mortgagecomparer\db\Loan.java">
+      <Message>At Loan.java:[line 44]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" abbrev="WMI" category="PERFORMANCE" instanceHash="cb5369b81c7488bec21c0d6d647e307e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Inefficient use of keySet iterator instead of entrySet iterator</ShortMessage>
+    <LongMessage>com.squareup.otto.Bus.register(Object) makes inefficient use of keySet iterator instead of entrySet iterator</LongMessage>
+    <Class classname="com.squareup.otto.Bus" primary="true">
+      <SourceLine classname="com.squareup.otto.Bus" start="102" end="589" sourcefile="Bus.java" sourcepath="com/squareup/otto/Bus.java" relSourcepath="com\squareup\otto\Bus.java">
+        <Message>At Bus.java:[lines 102-589]</Message>
+      </SourceLine>
+      <Message>In class com.squareup.otto.Bus</Message>
+    </Class>
+    <Method classname="com.squareup.otto.Bus" name="register" signature="(Ljava/lang/Object;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.squareup.otto.Bus" start="247" end="314" startBytecode="0" endBytecode="1341" sourcefile="Bus.java" sourcepath="com/squareup/otto/Bus.java" relSourcepath="com\squareup\otto\Bus.java"/>
+      <Message>In method com.squareup.otto.Bus.register(Object)</Message>
+    </Method>
+    <SourceLine classname="com.squareup.otto.Bus" primary="true" start="257" end="257" startBytecode="64" endBytecode="64" sourcefile="Bus.java" sourcepath="com/squareup/otto/Bus.java" relSourcepath="com\squareup\otto\Bus.java">
+      <Message>At Bus.java:[line 257]</Message>
+    </SourceLine>
+    <SourceLine classname="com.squareup.otto.Bus" start="290" end="290" startBytecode="338" endBytecode="338" sourcefile="Bus.java" sourcepath="com/squareup/otto/Bus.java" relSourcepath="com\squareup\otto\Bus.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at Bus.java:[line 290]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="WMI_WRONG_MAP_ITERATOR" abbrev="WMI" category="PERFORMANCE">
+    <ShortDescription>Inefficient use of keySet iterator instead of entrySet iterator</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="WMI">
+    <Description>Inefficient Map Iterator</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="86">
+    <MissingClass>android.annotation.SuppressLint</MissingClass>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.AlertDialog</MissingClass>
+    <MissingClass>android.app.AlertDialog$Builder</MissingClass>
+    <MissingClass>android.app.Application</MissingClass>
+    <MissingClass>android.app.DatePickerDialog</MissingClass>
+    <MissingClass>android.app.DatePickerDialog$OnDateSetListener</MissingClass>
+    <MissingClass>android.content.ContentResolver</MissingClass>
+    <MissingClass>android.content.ContentValues</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.DialogInterface</MissingClass>
+    <MissingClass>android.content.DialogInterface$OnClickListener</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.res.Configuration</MissingClass>
+    <MissingClass>android.content.res.Resources</MissingClass>
+    <MissingClass>android.database.ContentObserver</MissingClass>
+    <MissingClass>android.database.Cursor</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteDatabase</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteDatabase$CursorFactory</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteException</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteOpenHelper</MissingClass>
+    <MissingClass>android.graphics.Paint</MissingClass>
+    <MissingClass>android.net.Uri</MissingClass>
+    <MissingClass>android.os.AsyncTask</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Environment</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.os.IBinder</MissingClass>
+    <MissingClass>android.os.Looper</MissingClass>
+    <MissingClass>android.provider.Settings</MissingClass>
+    <MissingClass>android.provider.Settings$System</MissingClass>
+    <MissingClass>android.support.v4.app.DialogFragment</MissingClass>
+    <MissingClass>android.support.v4.app.Fragment</MissingClass>
+    <MissingClass>android.support.v4.app.FragmentActivity</MissingClass>
+    <MissingClass>android.support.v4.app.FragmentManager</MissingClass>
+    <MissingClass>android.support.v4.app.FragmentPagerAdapter</MissingClass>
+    <MissingClass>android.support.v4.app.NavUtils</MissingClass>
+    <MissingClass>android.support.v4.view.PagerAdapter</MissingClass>
+    <MissingClass>android.support.v4.view.ViewPager</MissingClass>
+    <MissingClass>android.support.v4.view.ViewPager$OnPageChangeListener</MissingClass>
+    <MissingClass>android.support.v4.view.ViewPager$SimpleOnPageChangeListener</MissingClass>
+    <MissingClass>android.support.v7.app.ActionBar</MissingClass>
+    <MissingClass>android.support.v7.app.ActionBar$Tab</MissingClass>
+    <MissingClass>android.support.v7.app.ActionBar$TabListener</MissingClass>
+    <MissingClass>android.support.v7.app.ActionBarActivity</MissingClass>
+    <MissingClass>android.text.Editable</MissingClass>
+    <MissingClass>android.text.InputFilter</MissingClass>
+    <MissingClass>android.text.Spanned</MissingClass>
+    <MissingClass>android.text.TextPaint</MissingClass>
+    <MissingClass>android.text.TextWatcher</MissingClass>
+    <MissingClass>android.text.format.DateFormat</MissingClass>
+    <MissingClass>android.text.method.KeyListener</MissingClass>
+    <MissingClass>android.util.AttributeSet</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.KeyEvent</MissingClass>
+    <MissingClass>android.view.LayoutInflater</MissingClass>
+    <MissingClass>android.view.Menu</MissingClass>
+    <MissingClass>android.view.MenuInflater</MissingClass>
+    <MissingClass>android.view.MenuItem</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.view.View$OnFocusChangeListener</MissingClass>
+    <MissingClass>android.view.ViewGroup</MissingClass>
+    <MissingClass>android.view.Window</MissingClass>
+    <MissingClass>android.view.WindowManager</MissingClass>
+    <MissingClass>android.view.WindowManager$LayoutParams</MissingClass>
+    <MissingClass>android.view.inputmethod.InputMethodManager</MissingClass>
+    <MissingClass>android.widget.Button</MissingClass>
+    <MissingClass>android.widget.EditText</MissingClass>
+    <MissingClass>android.widget.ImageButton</MissingClass>
+    <MissingClass>android.widget.LinearLayout</MissingClass>
+    <MissingClass>android.widget.TableRow</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.TextView$OnEditorActionListener</MissingClass>
+    <MissingClass>android.widget.ToggleButton</MissingClass>
+    <MissingClass>org.acra.ACRA</MissingClass>
+    <MissingClass>org.acra.ReportingInteractionMode</MissingClass>
+    <MissingClass>org.acra.annotation.ReportsCrashes</MissingClass>
+    <MissingClass>org.acra.sender.HttpSender</MissingClass>
+    <MissingClass>org.acra.sender.HttpSender$Method</MissingClass>
+    <MissingClass>org.acra.sender.HttpSender$Type</MissingClass>
+    <MissingClass>org.apache.commons.io.IOUtils</MissingClass>
+    <MissingClass>org.apache.commons.lang3.exception.ExceptionUtils</MissingClass>
+    <MissingClass>org.apache.commons.lang3.time.StopWatch</MissingClass>
+    <MissingClass>org.joda.time.Interval</MissingClass>
+    <MissingClass>org.joda.time.Period</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Fri, 20 Sep 2013 00:16:07 -0700" total_classes="115" referenced_classes="221" total_bugs="3" total_size="4258" num_packages="16" vm_version="20.45-b01" cpu_seconds="6.00" clock_seconds="4.93" peak_mbytes="166.89" alloc_mbytes="247.50" gc_seconds="0.30" priority_2="3">
+    <FileStats path="android/support/v7/appcompat/R.java" bugCount="0" size="620"/>
+    <FileStats path="android/support/v7/gridlayout/R.java" bugCount="0" size="71"/>
+    <FileStats path="com/kolbly/android/fragments/DateDialogFragment.java" bugCount="0" size="38"/>
+    <FileStats path="com/kolbly/android/fragments/DateDialogFragmentListener.java" bugCount="0" size="2"/>
+    <FileStats path="com/kolbly/android/fragments/SetLoanNameDialog.java" bugCount="0" size="41"/>
+    <FileStats path="com/kolbly/android/fragments/SetLoanNameDialogEvent.java" bugCount="0" size="12"/>
+    <FileStats path="com/kolbly/android/graphics/EditTextEx.java" bugCount="0" size="73"/>
+    <FileStats path="com/kolbly/android/graphics/GraphicsUtil.java" bugCount="0" size="39"/>
+    <FileStats path="com/kolbly/android/graphics/OnDoneEditingListener.java" bugCount="0" size="2"/>
+    <FileStats path="com/kolbly/android/graphics/RangeFilter.java" bugCount="0" size="14"/>
+    <FileStats path="com/kolbly/android/util/DateUtil.java" bugCount="0" size="20"/>
+    <FileStats path="com/kolbly/android/util/DbUtil.java" bugCount="0" size="31"/>
+    <FileStats path="com/kolbly/android/util/ExceptionWriter.java" bugCount="1" size="42" bugHash="dad8c56c4b9d1c7376e05de08f10753a"/>
+    <FileStats path="com/kolbly/android/util/ResourceUtil.java" bugCount="0" size="20"/>
+    <FileStats path="com/kolbly/android/util/SqlSplitter.java" bugCount="0" size="48"/>
+    <FileStats path="com/kolbly/android/util/StorageState.java" bugCount="0" size="59"/>
+    <FileStats path="com/kolbly/android/util/date/DateFormat.java" bugCount="0" size="36"/>
+    <FileStats path="com/kolbly/android/util/date/SystemDateFormat.java" bugCount="0" size="73"/>
+    <FileStats path="com/kolbly/android/util/date/SystemDateFormatEvent.java" bugCount="0" size="10"/>
+    <FileStats path="com/kolbly/android/util/time/SystemTimeFormat.java" bugCount="0" size="60"/>
+    <FileStats path="com/kolbly/android/util/time/SystemTimeFormatEvent.java" bugCount="0" size="10"/>
+    <FileStats path="com/kolbly/android/util/time/TimeFormat.java" bugCount="0" size="24"/>
+    <FileStats path="com/kolbly/global/G.java" bugCount="0" size="17"/>
+    <FileStats path="com/kolbly/global/S.java" bugCount="0" size="41"/>
+    <FileStats path="com/kolbly/java/util/ClassUtil.java" bugCount="0" size="26"/>
+    <FileStats path="com/kolbly/java/util/IOUtil.java" bugCount="0" size="11"/>
+    <FileStats path="com/kolbly/java/util/Loggable.java" bugCount="0" size="4"/>
+    <FileStats path="com/kolbly/java/util/MathUtil.java" bugCount="0" size="6"/>
+    <FileStats path="com/kolbly/java/util/Spaces.java" bugCount="0" size="8"/>
+    <FileStats path="com/kolbly/java/util/SqlUtil.java" bugCount="0" size="19"/>
+    <FileStats path="com/kolbly/java/util/StrUtil.java" bugCount="0" size="39"/>
+    <FileStats path="com/kolbly/mortgagecomparer/AppContextContainer.java" bugCount="0" size="2"/>
+    <FileStats path="com/kolbly/mortgagecomparer/AppExceptionHandler.java" bugCount="0" size="29"/>
+    <FileStats path="com/kolbly/mortgagecomparer/BuildConfig.java" bugCount="0" size="4"/>
+    <FileStats path="com/kolbly/mortgagecomparer/MyApplication.java" bugCount="0" size="11"/>
+    <FileStats path="com/kolbly/mortgagecomparer/R.java" bugCount="0" size="1051"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/MainActivity.java" bugCount="0" size="10"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/amortizationactivity/AmortizationActivity.java" bugCount="0" size="63"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/amortizationactivity/AmortizationActivitySectionsPagerAdapter.java" bugCount="0" size="19"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/amortizationactivity/AmortizationTableFragment.java" bugCount="0" size="10"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/amortizationactivity/LoanComparisonFragment.java" bugCount="0" size="10"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/loanactivity/LoanActivity.java" bugCount="0" size="73"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/loanactivity/LoanActivityFragment.java" bugCount="0" size="304"/>
+    <FileStats path="com/kolbly/mortgagecomparer/activities/loanactivity/LoanActivitySectionsPagerAdapter.java" bugCount="0" size="19"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/AmRow.java" bugCount="0" size="27"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/Amortization.java" bugCount="0" size="160"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/ApplicationError.java" bugCount="0" size="43"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/DataManager.java" bugCount="0" size="146"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/DbRow.java" bugCount="0" size="36"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/Loan.java" bugCount="1" size="139" bugHash="5767d5fdca28b93ae4f5aa6f2fa59884"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/MyDbOpenHelper.java" bugCount="0" size="50"/>
+    <FileStats path="com/kolbly/mortgagecomparer/db/User.java" bugCount="0" size="33"/>
+    <FileStats path="com/kolbly/mortgagecomparer/splashscreenactivity/MySplashScreenActivity.java" bugCount="0" size="79"/>
+    <FileStats path="com/squareup/otto/AnnotatedHandlerFinder.java" bugCount="0" size="79"/>
+    <FileStats path="com/squareup/otto/Bus.java" bugCount="1" size="205" bugHash="5e13ee6a2a52d282e943f0b0cc5787e5"/>
+    <FileStats path="com/squareup/otto/DeadEvent.java" bugCount="0" size="8"/>
+    <FileStats path="com/squareup/otto/EventHandler.java" bugCount="0" size="47"/>
+    <FileStats path="com/squareup/otto/EventProducer.java" bugCount="0" size="46"/>
+    <FileStats path="com/squareup/otto/HandlerFinder.java" bugCount="0" size="15"/>
+    <FileStats path="com/squareup/otto/Produce.java" bugCount="0" size="1"/>
+    <FileStats path="com/squareup/otto/Subscribe.java" bugCount="0" size="1"/>
+    <FileStats path="com/squareup/otto/ThreadEnforcer.java" bugCount="0" size="22"/>
+    <PackageStats package="android.support.v7.appcompat" total_bugs="0" total_types="13" total_size="620">
+      <ClassStats class="android.support.v7.appcompat.R" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$anim" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$attr" sourceFile="R.java" interface="false" size="109" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$bool" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$color" sourceFile="R.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$dimen" sourceFile="R.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$drawable" sourceFile="R.java" interface="false" size="90" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$id" sourceFile="R.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$integer" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$layout" sourceFile="R.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$string" sourceFile="R.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$style" sourceFile="R.java" interface="false" size="130" bugs="0"/>
+      <ClassStats class="android.support.v7.appcompat.R$styleable" sourceFile="R.java" interface="false" size="127" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v7.gridlayout" total_bugs="0" total_types="5" total_size="71">
+      <ClassStats class="android.support.v7.gridlayout.R" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="android.support.v7.gridlayout.R$attr" sourceFile="R.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="android.support.v7.gridlayout.R$dimen" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v7.gridlayout.R$id" sourceFile="R.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="android.support.v7.gridlayout.R$styleable" sourceFile="R.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.android.fragments" total_bugs="0" total_types="5" total_size="93">
+      <ClassStats class="com.kolbly.android.fragments.DateDialogFragment" sourceFile="DateDialogFragment.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.kolbly.android.fragments.DateDialogFragment$1" sourceFile="DateDialogFragment.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.kolbly.android.fragments.DateDialogFragmentListener" sourceFile="DateDialogFragmentListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.kolbly.android.fragments.SetLoanNameDialog" sourceFile="SetLoanNameDialog.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.kolbly.android.fragments.SetLoanNameDialogEvent" sourceFile="SetLoanNameDialogEvent.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.android.graphics" total_bugs="0" total_types="5" total_size="128">
+      <ClassStats class="com.kolbly.android.graphics.EditTextEx" sourceFile="EditTextEx.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="com.kolbly.android.graphics.EditTextEx$1" sourceFile="EditTextEx.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.android.graphics.GraphicsUtil" sourceFile="GraphicsUtil.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.kolbly.android.graphics.OnDoneEditingListener" sourceFile="OnDoneEditingListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.kolbly.android.graphics.RangeFilter" sourceFile="RangeFilter.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.android.util" total_bugs="1" total_types="6" total_size="220" priority_2="1">
+      <ClassStats class="com.kolbly.android.util.DateUtil" sourceFile="DateUtil.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.DbUtil" sourceFile="DbUtil.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.ExceptionWriter" sourceFile="ExceptionWriter.java" interface="false" size="42" bugs="1" priority_2="1"/>
+      <ClassStats class="com.kolbly.android.util.ResourceUtil" sourceFile="ResourceUtil.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.SqlSplitter" sourceFile="SqlSplitter.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.StorageState" sourceFile="StorageState.java" interface="false" size="59" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.android.util.date" total_bugs="0" total_types="4" total_size="119">
+      <ClassStats class="com.kolbly.android.util.date.DateFormat" sourceFile="DateFormat.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.date.SystemDateFormat" sourceFile="SystemDateFormat.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.date.SystemDateFormat$1" sourceFile="SystemDateFormat.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.date.SystemDateFormatEvent" sourceFile="SystemDateFormatEvent.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.android.util.time" total_bugs="0" total_types="4" total_size="94">
+      <ClassStats class="com.kolbly.android.util.time.SystemTimeFormat" sourceFile="SystemTimeFormat.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.time.SystemTimeFormat$1" sourceFile="SystemTimeFormat.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.time.SystemTimeFormatEvent" sourceFile="SystemTimeFormatEvent.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.kolbly.android.util.time.TimeFormat" sourceFile="TimeFormat.java" interface="false" size="24" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.global" total_bugs="0" total_types="5" total_size="58">
+      <ClassStats class="com.kolbly.global.G" sourceFile="G.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.kolbly.global.S" sourceFile="S.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.kolbly.global.S$DataManagerHolder" sourceFile="S.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.kolbly.global.S$SystemDateFormatHolder" sourceFile="S.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.kolbly.global.S$SystemTimeFormatHolder" sourceFile="S.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.java.util" total_bugs="0" total_types="7" total_size="113">
+      <ClassStats class="com.kolbly.java.util.ClassUtil" sourceFile="ClassUtil.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.IOUtil" sourceFile="IOUtil.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.Loggable" sourceFile="Loggable.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.MathUtil" sourceFile="MathUtil.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.Spaces" sourceFile="Spaces.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.SqlUtil" sourceFile="SqlUtil.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.kolbly.java.util.StrUtil" sourceFile="StrUtil.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer" total_bugs="0" total_types="19" total_size="1097">
+      <ClassStats class="com.kolbly.mortgagecomparer.AppContextContainer" sourceFile="AppContextContainer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.AppExceptionHandler" sourceFile="AppExceptionHandler.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.MyApplication" sourceFile="MyApplication.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$anim" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$attr" sourceFile="R.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$bool" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$color" sourceFile="R.java" interface="false" size="165" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$dimen" sourceFile="R.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$drawable" sourceFile="R.java" interface="false" size="124" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$id" sourceFile="R.java" interface="false" size="140" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$integer" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$layout" sourceFile="R.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$menu" sourceFile="R.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$raw" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$string" sourceFile="R.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$style" sourceFile="R.java" interface="false" size="137" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.R$styleable" sourceFile="R.java" interface="false" size="185" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer.activities" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.MainActivity" sourceFile="MainActivity.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer.activities.amortizationactivity" total_bugs="0" total_types="5" total_size="102">
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivity" sourceFile="AmortizationActivity.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivity$1" sourceFile="AmortizationActivity.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivitySectionsPagerAdapter" sourceFile="AmortizationActivitySectionsPagerAdapter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationTableFragment" sourceFile="AmortizationTableFragment.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.amortizationactivity.LoanComparisonFragment" sourceFile="LoanComparisonFragment.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer.activities.loanactivity" total_bugs="0" total_types="10" total_size="396">
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity" sourceFile="LoanActivity.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivity$1" sourceFile="LoanActivity.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment" sourceFile="LoanActivityFragment.java" interface="false" size="232" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$1" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$2" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$3" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$4" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$5" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivityFragment$6" sourceFile="LoanActivityFragment.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.activities.loanactivity.LoanActivitySectionsPagerAdapter" sourceFile="LoanActivitySectionsPagerAdapter.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer.db" total_bugs="1" total_types="8" total_size="634" priority_2="1">
+      <ClassStats class="com.kolbly.mortgagecomparer.db.AmRow" sourceFile="AmRow.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.Amortization" sourceFile="Amortization.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.ApplicationError" sourceFile="ApplicationError.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.DataManager" sourceFile="DataManager.java" interface="false" size="146" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.DbRow" sourceFile="DbRow.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.Loan" sourceFile="Loan.java" interface="false" size="139" bugs="1" priority_2="1"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.MyDbOpenHelper" sourceFile="MyDbOpenHelper.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.db.User" sourceFile="User.java" interface="false" size="33" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.kolbly.mortgagecomparer.splashscreenactivity" total_bugs="0" total_types="3" total_size="79">
+      <ClassStats class="com.kolbly.mortgagecomparer.splashscreenactivity.MySplashScreenActivity" sourceFile="MySplashScreenActivity.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.splashscreenactivity.MySplashScreenActivity$1" sourceFile="MySplashScreenActivity.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.kolbly.mortgagecomparer.splashscreenactivity.MySplashScreenActivity$FooBackgroundTask" sourceFile="MySplashScreenActivity.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.squareup.otto" total_bugs="1" total_types="15" total_size="424" priority_2="1">
+      <ClassStats class="com.squareup.otto.AnnotatedHandlerFinder" sourceFile="AnnotatedHandlerFinder.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="com.squareup.otto.Bus" sourceFile="Bus.java" interface="false" size="181" bugs="1" priority_2="1"/>
+      <ClassStats class="com.squareup.otto.Bus$1" sourceFile="Bus.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.Bus$2" sourceFile="Bus.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.Bus$EventWithHandler" sourceFile="Bus.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.DeadEvent" sourceFile="DeadEvent.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.EventHandler" sourceFile="EventHandler.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.squareup.otto.EventProducer" sourceFile="EventProducer.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="com.squareup.otto.HandlerFinder" sourceFile="HandlerFinder.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="com.squareup.otto.HandlerFinder$1" sourceFile="HandlerFinder.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.Produce" sourceFile="Produce.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.squareup.otto.Subscribe" sourceFile="Subscribe.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.squareup.otto.ThreadEnforcer" sourceFile="ThreadEnforcer.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="com.squareup.otto.ThreadEnforcer$1" sourceFile="ThreadEnforcer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.squareup.otto.ThreadEnforcer$2" sourceFile="ThreadEnforcer.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="280" invocations="817" avgMicrosecondsPerInvocation="343" maxMicrosecondsPerInvocation="24453" standardDeviationMircosecondsPerInvocation="1384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="222" invocations="454" avgMicrosecondsPerInvocation="491" maxMicrosecondsPerInvocation="27163" standardDeviationMircosecondsPerInvocation="1675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="213" invocations="450" avgMicrosecondsPerInvocation="474" maxMicrosecondsPerInvocation="23165" standardDeviationMircosecondsPerInvocation="1350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="185" invocations="452" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="12531" standardDeviationMircosecondsPerInvocation="1074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="178" invocations="820" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="1534" standardDeviationMircosecondsPerInvocation="188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="176" invocations="463" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="18819" standardDeviationMircosecondsPerInvocation="1136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="147" invocations="468" avgMicrosecondsPerInvocation="314" maxMicrosecondsPerInvocation="14162" standardDeviationMircosecondsPerInvocation="922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="145" invocations="13101" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="997" standardDeviationMircosecondsPerInvocation="33"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="134" invocations="221" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="7957" standardDeviationMircosecondsPerInvocation="1230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="124" invocations="374" avgMicrosecondsPerInvocation="333" maxMicrosecondsPerInvocation="18613" standardDeviationMircosecondsPerInvocation="1144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="118" invocations="221" avgMicrosecondsPerInvocation="536" maxMicrosecondsPerInvocation="14159" standardDeviationMircosecondsPerInvocation="1377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="104" invocations="454" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="15271" standardDeviationMircosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="98" invocations="464" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="54625" standardDeviationMircosecondsPerInvocation="2617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="80" invocations="803" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="2022" standardDeviationMircosecondsPerInvocation="170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="221" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="4305" standardDeviationMircosecondsPerInvocation="723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="67" invocations="7502" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="961" standardDeviationMircosecondsPerInvocation="27"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="51" invocations="454" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="3752" standardDeviationMircosecondsPerInvocation="271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="51" invocations="450" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="17974" standardDeviationMircosecondsPerInvocation="852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="50" invocations="309" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="16997" standardDeviationMircosecondsPerInvocation="1006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="46" invocations="221" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="11242" standardDeviationMircosecondsPerInvocation="872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="42" invocations="221" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="9676" standardDeviationMircosecondsPerInvocation="711"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="41" invocations="704" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="1195" standardDeviationMircosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="40" invocations="115" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="8243" standardDeviationMircosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="39" invocations="115" avgMicrosecondsPerInvocation="342" maxMicrosecondsPerInvocation="2159" standardDeviationMircosecondsPerInvocation="426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.NonReportingDetectorToDetector2Adapter" totalMilliseconds="38" invocations="3324" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="764" standardDeviationMircosecondsPerInvocation="29"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="37" invocations="115" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="4486" standardDeviationMircosecondsPerInvocation="609"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="33" invocations="115" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="3487" standardDeviationMircosecondsPerInvocation="527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="32" invocations="221" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="2544" standardDeviationMircosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="31" invocations="221" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="4418" standardDeviationMircosecondsPerInvocation="348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="31" invocations="115" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="6648" standardDeviationMircosecondsPerInvocation="681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="30" invocations="115" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="7044" standardDeviationMircosecondsPerInvocation="734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="29" invocations="427" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1956" standardDeviationMircosecondsPerInvocation="163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="26" invocations="115" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="4505" standardDeviationMircosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="25" invocations="115" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="3997" standardDeviationMircosecondsPerInvocation="438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="25" invocations="115" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="6724" standardDeviationMircosecondsPerInvocation="922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="24" invocations="115" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="2003" standardDeviationMircosecondsPerInvocation="289"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

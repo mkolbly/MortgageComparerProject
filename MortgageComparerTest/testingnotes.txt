@@ -1,0 +1,36 @@
+
+Robolectric Test Notes
+
+How to get testing Context
+--------------------------
+Context context = Robolectric.getShadowApplication().getApplicationContext();
+
+
+Testing properties file
+-----------------------
+org.robolectric.Config.properties  (in main test directory)
+manifest: ../MortgageComparer/AndroidManifest.xml  (specifies manifest file)
+
+
+Annotations
+-----------
+@Config(manifest=Config.DEFAULT) - uses manifest specified in 
+  	org.robolectric.Config.properties file
+  
+@Config(manifest="TestManifest1.xml") - uses manifest in this test project
+
+@Config(manifest="../MortgageComparer/AndroidManifest.xml") - uses manifest in 
+  	MortgageComparer project.  Side effect is that any resources are also loaded
+  	from there so any test resources are not available
+ 
+
+Database testing
+----------------
+Only in-memory database is supported
+
+Annotate with @Config(manifest="../MortgageComparer/AndroidManifest.xml") in 
+order to have database populate with raw resources needed to create database
+schema
+
+
+

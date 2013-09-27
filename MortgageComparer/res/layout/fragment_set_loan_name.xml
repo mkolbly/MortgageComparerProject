@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+      
+    <EditText
+        android:id="@+id/loan_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="fill_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:minWidth="1000dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</LinearLayout>
+

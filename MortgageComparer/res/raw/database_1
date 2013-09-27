@@ -1,0 +1,34 @@
+
+CREATE TABLE IF NOT EXISTS [Loan]
+(
+	_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	loanAmount DOUBLE NOT NULL,
+	interestRatePct DOUBLE NOT NULL,
+	loanTermMonths INTEGER NOT NULL,
+	extraPayment DOUBLE NOT NULL DEFAULT 0,
+	name TEXT NOT NULL DEFAULT '',
+	loanStartDate LONG NOT NULL DEFAULT 0
+);
+
+
+CREATE TABLE IF NOT EXISTS [ApplicationError]
+(
+	_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	message	TEXT NOT NULL,
+	stackTrace TEXT NOT NULL,
+	threadName TEXT NOT NULL,
+	threadId LONG NOT NULL,
+	threadPriority INTEGER NOT NULL,
+	timeStamp LONG NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS [User]
+(
+	_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	userName TEXT,
+	birthDate LONG
+);
+
+-- insert into User (userName, birthDate) values ("", 0);
+

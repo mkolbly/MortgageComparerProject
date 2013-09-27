@@ -1,0 +1,20 @@
+This is a simple application written for purposes of providing an independent Android code 
+sample for an online resume. I couldn't use my work from my previous employer 
+due to potential copyright infringement. Despite having many years experience 
+writing mobile applications in J2ME, PalmOS, Symbian, BREW, Windows Mobile, 
+Blackberry and Android, for some reason, some potential employers considered me 
+to have a lack of experience due to the fact that I only had a little over a 
+year of Android experience and would not even grant me an interview.  Here's a 
+memo to those folks - ALL MOBILE PLATFORMS ARE IN A STATE OF CONSTANT CHANGE - 
+especially newer ones.  Someone with a proven track record of kicking ass and 
+pushing out products to market in multiple startup companies using a variety of 
+technologies under severely time-crunched conditions is going to give you more 
+bang for the buck than someone with 4-5 years of Android experience and little 
+else.  After interviewing a few hundred people myself, I can tell you all from 
+experience that an intelligent driven individual will be much more successful 
+than simply looking for the perfect skillset match that is mostly outdated every 
+six months anyway. 
+<br>
+This software is released under the WTFPL version 2. <br>
+See http://www.wtfpl.net <br>
+or http://en.wikipedia.org/wiki/WTFPL

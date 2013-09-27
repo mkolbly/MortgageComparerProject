@@ -1,0 +1,43 @@
+<!-- For use with AmortizationActivityTableLayout 
+     Note: Mothballed, but keep around for reference purposes or further improvement
+-->
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/am_sv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:scrollbars="vertical"
+    tools:context=".AmortizationActivityTableLayout" >
+
+    <HorizontalScrollView
+        android:id="@+id/am_sv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			 
+            <TableLayout
+                android:id="@+id/am_data_table"
+                android:layout_width="800dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/DarkLine"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+
+            </TableLayout>
+    
+        </LinearLayout>
+    
+    </HorizontalScrollView>
+
+</ScrollView>

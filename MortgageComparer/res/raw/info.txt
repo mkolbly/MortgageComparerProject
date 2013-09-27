@@ -1,0 +1,7 @@
+<h3>Mortgage Calculator</h3>
+
+Version 0.1<br>
+
+Copyright 2013 Mike Kolbly<br>
+
+<b>www.kolbly.com</b>

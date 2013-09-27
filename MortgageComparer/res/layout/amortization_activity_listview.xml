@@ -1,0 +1,32 @@
+<!-- 
+Note: This layout gives this lint warning - "This HorizontalScrollView layout 
+or its LinearLayout parent is possibly useless", however if you do not wrap
+the HorizontalScrollView then (at least in the emulators) the layout_marginLeft
+and layout_marginTop are completely ignored.  This reslts in those sides of the
+enclosing boxes to be cutoff on those sides.
+ -->
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/amortization_activity_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        tools:ignore="UselessParent" >
+
+        <ListView
+            android:id="@+id/amortization_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#00000000" >
+
+        </ListView>
+    </HorizontalScrollView>
+
+</LinearLayout>

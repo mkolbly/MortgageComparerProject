@@ -1,0 +1,30 @@
+# required metadata
+sonar.projectKey=oneX
+sonar.projectName=oneXAndroid
+sonar.projectVersion=1
+ 
+# optional description
+sonar.projectDescription=oneX Android
+ 
+# path to source directories (required)
+sonar.sources=src
+ 
+# path to test source directories (optional)
+#sonar.tests=testDir1,testDir2
+ 
+# path to project binaries (optional), for example directory of Java bytecode
+sonar.binaries=bin/classes
+ 
+# optional comma-separated list of paths to libraries. Only path to JAR file is supported.
+#sonar.libraries=path/to/library/*.jar,path/to/specific/library/myLibrary.jar,parent/*/*.jar
+ 
+# The value of the property must be the key of the language.
+sonar.language=java
+ 
+# Additional parameters
+#sonar.my.property=value
+
+sonar.exclusions=**/net/vivekiyer/**,**/gen/**
+
+#sonar.switchoffviolations.multicriteria=*;pmd:UnusedModifier;*
+#sonar.switchoffviolations.multicriteria=*;checkstyle:com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck;*

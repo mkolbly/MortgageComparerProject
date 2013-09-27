@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam="-bootclasspath /android/sdk/platforms/android-7/android.jar " author="true" classpath="D:\src\android\MortgageComparerProject\support\v7\appcompat\libs\android-support-v7-appcompat.jar;libs/android-support-v7-mediarouter.jar;libraries/joda-time/joda-time-2.3.jar;D:\src\android\MortgageComparerProject\support\v7\gridlayout\libs\android-support-v7-gridlayout.jar;libs/apache.jar;libs/android-support-v4.jar;libraries/acra/acra-4.5.0.jar;D:\src\android\MortgageComparerProject\support\v7\gridlayout\bin\android-support-v7-gridlayout.jar;D:\src\android\MortgageComparerProject\support\v7\appcompat\bin\android-support-v7-appcompat.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.kolbly.java.util,com.kolbly.android.fragments,com.kolbly.mortgagecomparer.activities.amortizationactivity.mothball,com.kolbly.mortgagecomparer.activities.about,com.kolbly.mortgagecomparer.splashscreenactivity,com.kolbly.mortgagecomparer.util,com.kolbly.mortgagecomparer.activities.amortizationactivity,com.kolbly.android.util.time,com.kolbly.mortgagecomparer.activities,com.kolbly.global,com.kolbly.android.graphics,com.kolbly.android.util.date,com.kolbly.android.util,com.kolbly.mortgagecomparer.activities.loanactivity,com.kolbly.mortgagecomparer.db" source="1.6" sourcefiles="src/com/kolbly/mortgagecomparer/AppContextContainer.java,src/com/kolbly/mortgagecomparer/AppExceptionHandler.java,src/com/kolbly/mortgagecomparer/MyApplication.java" sourcepath="src;gen" splitindex="true" use="true" version="true">
+            <link href="file:/C:/android/sdk/docs/reference"/>
+            <link href="file:/D:/src/android/MortgageComparerProject/MortgageComparer/doc/mc/"/>
+        </javadoc>
+    </target>
+</project>

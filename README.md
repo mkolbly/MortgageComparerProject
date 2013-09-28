@@ -16,3 +16,5 @@ Some technologies employed in this project include:
 * Test-driven development with MortgageComparerTest project using Robolectric and EclEmma used for Code Coverage.
 * Shadow classes created for unit tests and better coverage
 * Used a custom Bus (Otto) for cleaner Activity/Fragments communications
+
+If you wish to hire me, my resume is at www.kolbly.com

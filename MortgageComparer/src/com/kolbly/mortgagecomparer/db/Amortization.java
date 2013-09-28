@@ -6,11 +6,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-import org.joda.time.Interval;
-import org.joda.time.Period;
-
 import com.kolbly.android.util.DateUtil;
 import com.kolbly.global.G;
+import com.kolbly.java.util.Interval;
 
 /**
  * Loan amortization data
@@ -376,7 +374,7 @@ public class Amortization
 	 * @return Joda time period (Age of user) or null if user's birth date is
 	 * 	unknown
 	 */
-	public Period getPaidOffAge()
+	public Interval getPaidOffAge()
 	{
 		this.calc();
 		
@@ -388,9 +386,9 @@ public class Amortization
 		long startInstant = myBirthDate.getTime();
 		long endInstant = this.getPayoffDate().getTime();
 		
-		Period p = new Period(startInstant, endInstant);
+		Interval i = new Interval(startInstant, endInstant);
 		
-		return p;
+		return i;
 	}
 
 	

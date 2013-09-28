@@ -3,8 +3,6 @@ package com.kolbly.mortgagecomparer.activities.loanactivity;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import org.joda.time.Period;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,6 +33,7 @@ import com.kolbly.android.graphics.EditTextExListener;
 import com.kolbly.android.graphics.RangeFilter;
 import com.kolbly.global.G;
 import com.kolbly.java.util.ClassUtil;
+import com.kolbly.java.util.Interval;
 import com.kolbly.java.util.MathUtil;
 import com.kolbly.mortgagecomparer.R;
 import com.kolbly.mortgagecomparer.activities.amortizationactivity.AmortizationActivityListView;
@@ -388,7 +387,7 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 		this.myResultsBorrowerBirthDate.setText(user.getBirthDateString());
 
 		// Age when paid off
-		Period age = myAmortization.getPaidOffAge();
+		Interval age = myAmortization.getPaidOffAge();
 		if (age == null)
 		{
 			// If age is unknown, hide the entire row
@@ -396,8 +395,8 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 		}
 		else
 		{
-			int ageYears = age.getYears();
-			int ageMonths = age.getMonths();
+			int ageYears = age.getYearsPart();
+			int ageMonths = age.getMonthsPart();
 
 			String ageString = (ageMonths > 0) ? String.format(G.getLocale(), "%d y,  %d m", ageYears, ageMonths)
 				: String.format(G.getLocale(), "%d y", ageYears);
@@ -673,11 +672,11 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 		sb.append(String.format("%s : %s%n", r.getString(R.string.Borrower_birth_date), user.getBirthDateString()));
 
 		// Age when paid off
-		Period age = myAmortization.getPaidOffAge();
+		Interval age = myAmortization.getPaidOffAge();
 		if (age != null)
 		{
-			int ageYears = age.getYears();
-			int ageMonths = age.getMonths();
+			int ageYears = age.getYearsPart();
+			int ageMonths = age.getMonthsPart();
 
 			String ageString = (ageMonths > 0) ? String.format(G.getLocale(), "%d y,  %d m", ageYears, ageMonths)
 				: String.format(G.getLocale(), "%d y", ageYears);

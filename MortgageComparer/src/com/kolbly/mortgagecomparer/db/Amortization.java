@@ -368,10 +368,7 @@ public class Amortization
 	/**
 	 * Get the age of the borrower when the loan is paid off
 	 * 
-	 * TODO: Get rid of the entire Joda library and create our own TimeSpan class
-	 * 	(should be easy).  Joda is not playing nice with Proguard
-	 * 
-	 * @return Joda time period (Age of user) or null if user's birth date is
+	 * @return Time period (Age of user) or null if user's birth date is
 	 * 	unknown
 	 */
 	public Interval getPaidOffAge()

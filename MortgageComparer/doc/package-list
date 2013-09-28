@@ -8,7 +8,6 @@ com.kolbly.java.util
 com.kolbly.mortgagecomparer
 com.kolbly.mortgagecomparer.activities.about
 com.kolbly.mortgagecomparer.activities.amortizationactivity
-com.kolbly.mortgagecomparer.activities.amortizationactivity.mothball
 com.kolbly.mortgagecomparer.activities.loanactivity
 com.kolbly.mortgagecomparer.db
 com.kolbly.mortgagecomparer.splashscreenactivity

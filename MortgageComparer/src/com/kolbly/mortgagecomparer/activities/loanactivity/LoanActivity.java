@@ -209,7 +209,10 @@ public class LoanActivity extends ActionBarActivity implements ActionBar.TabList
 	 */
 	public List<Loan> createSomeLoanData()
 	{
-		Loan l1 = new Loan(100000, 4.5, 12 * 30); // NOSONAR
+		Loan l1 = new Loan(335773, 3.25, 12 * 30); // NOSONAR
+		l1.setName("Wells Fargo");
+		l1.setExtraPayment(500);
+		
 		Loan l2 = new Loan(150000, 4.5, 12 * 30); // NOSONAR
 		Loan l3 = new Loan(200000, 4.5, 12 * 30); // NOSONAR		
 

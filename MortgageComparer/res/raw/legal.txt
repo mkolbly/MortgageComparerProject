@@ -1,13 +1,13 @@
 This is a simple application written for purposes of providing an independent 
-Android code sample for my online resume. This is not a complicated application, 
-but is somewhat of a reference app for many Android development techniques. 
-See www.kolbly.com/sample for details. This software is released under the WTFPL 
-version 2. www.wtfpl.net
-
+Android code sample for my online resume. Source is at github.com/mkolbly/MortgageComparerProject. 
+This is not a complicated application, but is intended to be a reference app for 
+many Android development techniques. 
 <p>
-<b>Credits</b><br>
-Special thanks goes out to: Otto (http://square.github.io/otto/), 
-Apache Commons (http://commons.apache.org), 
-and RoboGuice (https://github.com/roboguice/roboguice). These 
-libraries were used in the development of Mortgage Comparer. All are licensed 
+<h4>Credits</h4>
+Special thanks goes out to:
+<p>
+* Otto - http://square.github.io/otto<br>
+* Apache Commons - http://commons.apache.org<br> 
+<br>
+These libraries were used in Mortgage Comparer. All are licensed 
 under the Apache License V2 (http://www.apache.org/licenses/LICENSE-2.0).

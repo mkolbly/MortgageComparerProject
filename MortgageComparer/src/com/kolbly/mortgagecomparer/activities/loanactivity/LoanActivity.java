@@ -214,8 +214,11 @@ public class LoanActivity extends ActionBarActivity implements ActionBar.TabList
 		l1.setExtraPayment(500);
 		
 		Loan l2 = new Loan(150000, 4.5, 12 * 30); // NOSONAR
+		l2.setName("Citizens");
+		
 		Loan l3 = new Loan(200000, 4.5, 12 * 30); // NOSONAR		
-
+		l3.setName("Chevy Chase");
+		
 		DataManager dm = DataManager.instance();
 
 		dm.save(l1);

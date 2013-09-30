@@ -119,7 +119,7 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		View view = inflater.inflate(R.layout.loan_activity_fragment4, container, false);
+		View view = inflater.inflate(R.layout.loan_activity_fragment, container, false);
 
 		this.myLoanActivity = (LoanActivity) this.getActivity();
 
@@ -609,7 +609,7 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 	{
 		Intent i = new Intent(Intent.ACTION_SEND);
 
-		i.putExtra(Intent.EXTRA_SUBJECT, "Mortgage Calculator Results");
+		i.putExtra(Intent.EXTRA_SUBJECT, "Mortgage Comparer Results");
 		i.putExtra(Intent.EXTRA_TEXT, "email text");
 		i.setType("message/rfc822");
 
@@ -744,7 +744,7 @@ public class LoanActivityFragment extends Fragment implements OnClickListener
 	{
 		switch (v.getId())
 		{
-		// Collapse "More Loan Info" section
+			// Collapse "More Loan Info" section
 			case R.id.collapseMoreLoanInfoButton:
 				myCollapseMoreLoanInfoButton.setVisibility(View.GONE);
 				myExpandMoreLoanInfoButton.setVisibility(View.VISIBLE);

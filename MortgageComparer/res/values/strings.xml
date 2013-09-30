@@ -1,49 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">MortgageComparer</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_test_activity1">TestActivity1</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-    <string name="title_activity_test_activity2">TestActivity2</string>
-    <string name="title_activity_test_activity3">TestActivity3</string>
-    <string name="title_activity_test_activity4">TestActivity4</string>
-    <string name="title_activity_test_activity5">TestActivity5</string>
+    <string name="Settings">Settings</string>
     <string name="crash_toast_text">Application crashed, collecting crash data.</string>
     <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help us fix this by sending us error data.</string>
     <string name="crash_dialog_comment_prompt">Add any comments about the problem below:</string>
     <string name="crash_dialog_ok_toast">Thank you!</string>
-    <string name="crash_dialog_title"></string>
-    <string name="title_activity_loan">Mortgage Calculator</string>
-    <string name="title_activity_splash_screen">Mortgage Calculator</string>
+    <string name="crash_dialog_title">Application Error</string>
     <string name="Loan_amount">Loan Amount</string>
     <string name="Annual_Interest_Rate_Pct">Annual Interest Rate %</string>
-    <string name="loan_term_years">Loan Term (years)</string>
-    <string name="years">Years</string>
-    <string name="months">Months</string>
-    <string name="calculate">Calculate</string>
+    <string name="Years">Years</string>
+    <string name="Months">Months</string>
+    <string name="Calculate">Calculate</string>
     <string name="Monthly_payment">Monthly Payment</string>
     <string name="New">New</string>
-    <string name="action_search">Search</string>
-    <string name="action_new">New</string>
-    <string name="action_help">Help</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_user">User info</string>
-    <string name="action_mail">Email loan info</string>
-    <string name="title_activity_scrollable_tabs_and_swipe">ScrollableTabsAndSwipe</string>
-    <string name="mark_for_comparison">Mark for comparison</string>
-    <string name="unmark_for_comparison">Unmark for comparison</string>
-    <string name="about">About</string>
-    <string name="copy">Copy</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_amortization">AmortizationActivity</string>
-    <string name="amoritization">Amortization</string>
+    <string name="Search">Search</string>
+    <string name="Help">Help</string>
+    <string name="Delete">Delete</string>
+    <string name="User_info">User info</string>
+    <string name="Email_loan_info">Email loan info</string>
+    <string name="Mark_for_comparison">Mark for comparison</string>
+    <string name="About">About</string>
+    <string name="Copy">Copy</string>
+    <string name="Amoritization">Amortization</string>
     <string name="Loan_comparison">Loan comparison</string>
     <string name="Loan_term">Loan Term</string>
     <string name="years_abbreviation">yrs</string>
@@ -52,9 +30,9 @@
     <string name="Unlocked">Unlocked</string>
     <string name="Minimum_Payment">Minimum Payment</string>
     <string name="Extra_Payment">Extra Payment</string>
-    <string name="more">More&#8230;</string>
+    <string name="More">More&#8230;</string>
     <string name="Less">Less&#8230;</string>
-    <string name="LoanStartDate">Loan Start Date</string>
+    <string name="Loan_Start_Date">Loan Start Date</string>
     <string name="Loan_Name">Loan Name</string>
     <string name="Enter_more_loan_information">Enter more loan information</string>
     <string name="More_Loan_Info">More Loan Info</string>
@@ -68,7 +46,6 @@
     <string name="ExtraPaymentHelpMessage">Extra monthly payment above the minimum that you wish to pay toward the principal of the loan.</string>
     <string name="Cant_delete_last_loan">Can\'t delete last loan</string>
     <string name="Copy_of">Copy of</string>
-    <string name="About_Mortgage_Calculator">About Mortgage Calculator</string>
     <string name="First_payment_date">First payment date</string>
     <string name="Starting_balance">Starting balance</string>
     <string name="Minimum_monthly_payment">Minimum monthly payment</string>
@@ -82,7 +59,6 @@
     <string name="Age_when_paid_off">Age when paid off</string>
     <string name="Mortgage_Comparer">Mortgage Comparer</string>
     <string name="Choose_an_email_client">Choose an email client</string>
-    <string name="hello_world">Hello world!</string>
     <string name="Month">Month</string>
     <string name="Date">Date</string>
     <string name="Beginning_Balance_Hdr">Beginning\nBalance</string>
@@ -92,6 +68,7 @@
     <string name="Cumulative_Principal_Hdr">Cumulative\nPrincipal</string>
     <string name="Cumulative_Interest_Hdr">Cumulative\nInterest</string>
     <string name="Ending_Balance_Hdr">Ending\nBalance</string>
-    <string name="title_activity_amortization_activity_list_view">AmortizationActivityListView</string>
+    <string name="About_Mortgage_Comparer">About Mortgage Comparer</string>
+    <string name="Amortization_Schedule">Amortization Schedule</string>
 
 </resources>

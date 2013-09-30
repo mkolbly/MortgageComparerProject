@@ -1,103 +1,39 @@
-<!--  
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:id="@+id/action_calculate"
+        android:icon="@drawable/ic_action_calculator"
+        android:title="@string/Calculate"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_mail"
+        android:icon="@drawable/ic_action_mail"
+        android:title="@string/Email_loan_info"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/New"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/Delete"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_action_about"
+        android:title="@string/About"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_enter_birthday"
         android:showAsAction="never"
-        android:title="@string/action_settings">
-    </item>
+        android:title="@string/Enter_Birthday"/>
+    <item
+        android:id="@+id/action_set_loan_name"
+        android:showAsAction="never"
+        android:title="@string/Set_Loan_Name"/>
 
-    <item android:id="@+id/action_more"
-          android:title="@string/more"
-          android:icon="@drawable/ic_action_full_screen"
-			yourapp:showAsAction="ifRoom"
- 		/>
-    
-    <item android:id="@+id/action_less"
-          android:title="@string/less"
-          android:icon="@drawable/ic_action_return_from_full_screen"
-			yourapp:showAsAction="ifRoom"
- 		android:visible="false" android:enabled="false"/>
- 		
- 	<item android:id="@+id/action_mark_unmark"
-          android:title="@string/mark_for_comparison"
-          android:icon="@drawable/ic_action_unmark"
-yourapp:showAsAction="ifRoom"
- 		/>
-      
-      
-       <item android:id="@+id/action_copy"
-          android:title="@string/copy"
-          android:icon="@drawable/ic_action_copy"
-yourapp:showAsAction="ifRoom"
- 		/>
- 		
- 		<item android:id="@+id/action_user"
-          android:title="@string/action_user"
-          android:icon="@drawable/ic_action_user"
-yourapp:showAsAction="ifRoom"
- 		/>
- 		
 </menu>
 
-
-yourapp:showAsAction="ifRoom|collapseActionView"
-
-android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
-
--->
-
-
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
- xmlns:yourapp="http://schemas.android.com/apk/res-auto">
-    
- 	<item android:id="@+id/action_calculate"
-          android:title="@string/calculate"
-          android:icon="@drawable/ic_action_calculator"
-			yourapp:showAsAction="ifRoom"
- 		/>
-
-      <item android:id="@+id/action_mail"
-          android:title="@string/action_mail"
-          android:icon="@drawable/ic_action_mail"
-			yourapp:showAsAction="ifRoom"
- 		/>
-      
-      <item android:id="@+id/action_new"
-          android:title="@string/action_new"
-          android:icon="@drawable/ic_action_new"
-yourapp:showAsAction="ifRoom"
- 		/>
-    
-      <item android:id="@+id/action_delete"
-          android:title="@string/action_delete"
-          android:icon="@drawable/ic_action_delete"
-yourapp:showAsAction="ifRoom"
- 		/>
-      
-      
-
-        
-      <item android:id="@+id/action_about"
-          android:title="@string/about"
-          android:icon="@drawable/ic_action_about"
-yourapp:showAsAction="ifRoom"
- 		/>
-         
-         <item android:id="@+id/action_enter_birthday"
-          android:title="@string/Enter_Birthday" android:showAsAction="never"/> 
-      
-      <item android:id="@+id/action_set_loan_name"
-          android:title="@string/Set_Loan_Name" android:showAsAction="never"/> 
-                 
-</menu>
-
-
-
-<!-- 
-
-
-yourapp:showAsAction="ifRoom|collapseActionView"
-
- -->
